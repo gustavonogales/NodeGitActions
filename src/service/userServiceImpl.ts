@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { injectable, inject } from 'tsyringe';
 import User from '@entity/user';
 import UserRepository from '@repository/adapter/userRepository';

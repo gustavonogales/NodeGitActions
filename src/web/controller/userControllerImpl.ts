@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Request, Response } from 'express';
 import { inject, injectable } from 'tsyringe';
 import UserService from '@service/adapter/userService';
