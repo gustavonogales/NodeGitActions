@@ -24,6 +24,7 @@
     "prettier"
   ],
   "rules": {
+    "no-useless-constructor": "off",
     "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "prettier/prettier": "error",

@@ -1,12 +1,9 @@
 import { Router } from 'express';
-import UserController from '@controller/userController';
-import UserServiceImpl from '@service/userServiceImpl';
-import UserRepositoryImpl from '@repository/userRepositoryImpl';
+import UserController from '@controller/adapter/userController';
+import { container } from 'tsyringe';
 
 const userRouter = Router();
-const userRepository = new UserRepositoryImpl();
-const userService = new UserServiceImpl(userRepository);
-const userController = new UserController(userService);
+const userController = container.resolve<UserController>('userController');
 
 userRouter.get('/', userController.findAll);
 
