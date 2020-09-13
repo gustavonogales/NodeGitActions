@@ -8,12 +8,9 @@ export default class UserController {
     this.userService = userService;
   }
 
-  async findAll(request: Request, response: Response): Promise<Response> {
-    const users = await this.userService.findAll().catch(() => {
-      console.log('KKK');
-    });
+  findAll = async (request: Request, response: Response): Promise<Response> => {
+    const users = await this.userService.findAll();
 
     return response.json(users);
-    // return response.json({ teu: 'cu' });
-  }
+  };
 }
