@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev --inspect --ignore-watch node_modules src/app/index.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_modules src/app/index.ts",
     "test": "jest"
   },
   "devDependencies": {
@@ -27,6 +27,7 @@
     "prettier": "^2.1.1",
     "ts-jest": "^26.3.0",
     "ts-node-dev": "^1.0.0-pre.62",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^4.0.2"
   }
 }

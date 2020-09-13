@@ -1,1 +1,1 @@
-import '../web/config/expressConfig';
+import '@config/expressConfig';

@@ -1,4 +1,4 @@
-import User from '../entity/user';
+import User from '@entity/user';
 import UserRepository from './adapter/userRepository';
 
 export default class UserRepositoryImpl implements UserRepository {

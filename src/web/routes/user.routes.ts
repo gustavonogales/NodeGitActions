@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import UserController from '../controller/userController';
-import UserServiceImpl from '../../service/userServiceImpl';
-import UserRepositoryImpl from '../../repository/userRepositoryImpl';
+import UserController from '@controller/userController';
+import UserServiceImpl from '@service/userServiceImpl';
+import UserRepositoryImpl from '@repository/userRepositoryImpl';
 
 const userRouter = Router();
 const userRepository = new UserRepositoryImpl();

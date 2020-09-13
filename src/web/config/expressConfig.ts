@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
-// import AppError from '../exception/appError';
-import userRouter from '../routes/user.routes';
+// import AppError from '@exception/appError';
+import userRouter from '@route/user.routes';
 
 const app = express();
 app.use(express.json());
