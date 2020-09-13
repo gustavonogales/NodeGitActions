@@ -9,8 +9,8 @@ export default class UserServiceImpl implements UserService {
     this.userRepository = userRepository;
   }
 
-  async findAll(): Promise<Array<User>> {
+  findAll = async (): Promise<Array<User>> => {
     const users = await this.userRepository.findAll();
     return users;
-  }
+  };
 }

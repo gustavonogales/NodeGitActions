@@ -2,15 +2,15 @@ import User from '../entity/user';
 import UserRepository from './adapter/userRepository';
 
 export default class UserRepositoryImpl implements UserRepository {
-  private users: User[] = [];
+  private users: Array<User> = new Array<User>();
 
-  async findAll(): Promise<Array<User>> {
+  findAll = async (): Promise<Array<User>> => {
     return this.users;
-  }
+  };
 
-  async create(user: User): Promise<User> {
+  create = async (user: User): Promise<User> => {
     this.users.push(user);
 
     return user;
-  }
+  };
 }
